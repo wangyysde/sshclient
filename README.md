@@ -1,6 +1,6 @@
 # simple sshclient with golang
 
-[![GoDoc](https://godoc.org/github.com/helloyi/go-sshclient?status.svg)](https://godoc.org/github.com/helloyi/go-sshclient)
+[![GoDoc](https://godoc.org/github.com/wangyysde/sshclient?status.svg)](https://godoc.org/github.com/wangyysde/sshclient)
 
 This package implemented a ssh client. It can run remote command, execute
 remote script, request terminal and request non-interactive shell simply.
