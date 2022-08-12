@@ -30,23 +30,6 @@ import (
 	"golang.org/x/crypto/ssh"
 )
 
-type remoteScriptType byte
-type remoteShellType byte
-
-const (
-	cmdLine remoteScriptType = iota
-	rawScript
-	scriptFile
-
-	interactiveShell remoteShellType = iota
-	nonInteractiveShell
-)
-
-// A Client implements an SSH client that supports running commands and scripts remotely.
-type Client struct {
-	client *ssh.Client
-}
-
 // DialWithPasswd starts a client connection to the given SSH server with passwd authmethod.
 func DialWithPasswd(addr, user, passwd string) (*Client, error) {
 	config := &ssh.ClientConfig{
@@ -155,17 +138,6 @@ func (c *Client) ScriptFile(fname string) *RemoteScript {
 	}
 }
 
-// A RemoteScript represents script that can be run remotely.
-type RemoteScript struct {
-	client     *ssh.Client
-	_type      remoteScriptType
-	script     *bytes.Buffer
-	scriptFile string
-	err        error
-
-	stdout io.Writer
-	stderr io.Writer
-}
 
 // Run runs the script on the client.
 //
@@ -308,24 +280,6 @@ func (rs *RemoteScript) runScriptFile() error {
 	return rs.runScript()
 }
 
-// A RemoteShell represents a login shell on the client.
-type RemoteShell struct {
-	client         *ssh.Client
-	requestPty     bool
-	terminalConfig *TerminalConfig
-
-	stdin  io.Reader
-	stdout io.Writer
-	stderr io.Writer
-}
-
-// A TerminalConfig represents the configuration for an interactive shell session.
-type TerminalConfig struct {
-	Term   string
-	Height int
-	Weight int
-	Modes  ssh.TerminalModes
-}
 
 // Terminal create a interactive shell on client.
 func (c *Client) Terminal(config *TerminalConfig) *RemoteShell {

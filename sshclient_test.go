@@ -178,7 +178,7 @@ func TestShell(t *testing.T) {
 }
 
 func TestMain(m *testing.M) {
-	flag.StringVar(&addr, "addr", "172.28.1.10:22", "The host of ssh")
+	flag.StringVar(&addr, "addr", "172.28.2.4:22", "The host of ssh")
 	flag.StringVar(&user, "user", "sysadm", "The user of login")
 	flag.StringVar(&passwd, "passwd", "Sysadm12345", "The passwd of user")
 	flag.StringVar(&prikey, "privatekey", "/root/.ssh/id_rsa", "The privatekey of user")

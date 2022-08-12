@@ -1,4 +1,6 @@
+//go:build !windows
 // +build !windows
+
 /* =============================================================
 * @Author:  Wayne Wang <net_use@bzhy.com>
 *
@@ -14,12 +16,15 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and  limitations under the License.
 * @License GNU Lesser General Public License  https://www.sysadm.cn/lgpl.html
-*/
+ */
 
 package sshkey
 
-import "fmt"
-import "github.com/gokyle/sshkey/readpass"
+import (
+	"fmt"
+
+	"github.com/wangyysde/sshclient/sshkey/readpass"
+)
 
 func unixReadPassword(prompt string) (password string, err error) {
 	binPass, err := readpass.ReadPass(prompt)

@@ -18,5 +18,3 @@ Example:
     default: // unknown key type
     }
 
-License:
-sshkey is released under an ISC license.
