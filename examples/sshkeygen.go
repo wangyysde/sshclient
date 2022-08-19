@@ -62,7 +62,7 @@ func checkErr(err error) {
 	}
 }
 
-func main() {
+func TestMain() {
 	flComment := flag.String("c", "", "key comment")
 	flFile := flag.String("f", "", "input keyfile")
 	flFpr := flag.Bool("l", false, "show fingerprint of keyfile")

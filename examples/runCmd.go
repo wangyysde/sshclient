@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/wangyysde/sshclient"
+	"github.com/wangyysde/sshclient/sshclient"
 )
 
 func main(){

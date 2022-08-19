@@ -97,6 +97,7 @@ const (
 	KEY_ECDSA
 	KEY_RSA
 	KEY_DSA
+	KEY_ED25519
 )
 
 var pubkeyRegexp = regexp.MustCompile("(?m)^[a-z0-9-]+ (\\S+).*$")

@@ -1,7 +1,7 @@
 /* =============================================================
 * @Author:  Wayne Wang <net_use@bzhy.com>
 *
-* @Copyright (c) 2021 Bzhy Network. All rights reserved.
+* @Copyright (c) 2022 Bzhy Network. All rights reserved.
 * @HomePage http://www.sysadm.cn
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +14,7 @@
 * See the License for the specific language governing permissions and  limitations under the License.
 * @License GNU Lesser General Public License  https://www.sysadm.cn/lgpl.html
  */
- 
+
 // Package sshclient implements an SSH client.
 package sshclient
 
@@ -26,8 +26,13 @@ import (
 	"io/ioutil"
 	"net"
 	"os"
+	"path/filepath"
+	"strings"
 
 	"golang.org/x/crypto/ssh"
+	kh "golang.org/x/crypto/ssh/knownhosts"
+
+	"github.com/wangyysde/sysadm/utils"
 )
 
 // DialWithPasswd starts a client connection to the given SSH server with passwd authmethod.
@@ -353,4 +358,26 @@ func (rs *RemoteShell) Start() error {
 	}
 
 	return nil
+}
+
+
+func GetHostKeyCallbackFunc(knowFile string)(ssh.HostKeyCallback,error){
+	if strings.TrimSpace(knowFile) == "" {
+		knowHostsPath := filepath.Join(os.Getenv("HOME"), ".ssh", "known_hosts")
+		if ok,_ := utils.CheckFileExists(knowHostsPath,""); !ok {
+			knowHostsFile, err := os.Create(knowHostsPath)
+			if err != nil {
+				return nil, fmt.Errorf("can not create known_hosts file %s",err)
+			}
+			defer knowHostsFile.Close()
+		}
+		knowFile = knowHostsPath
+	}
+
+	hostKeyCallback, err := kh.New(knowFile)
+	if err != nil {
+		return nil, fmt.Errorf("can not create hostkeycallback function %s", err)
+	}
+
+	return hostKeyCallback, nil
 }
