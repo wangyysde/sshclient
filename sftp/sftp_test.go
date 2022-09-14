@@ -31,11 +31,15 @@ import (
 )
 
 var (
-	host string ="www.sysadm.cn"
-	user string = "root"
-	password string = "123456"
+	host string ="10.50.9.113"
+	user string = "sysadm"
+	password string = "Sysadm12345"
 	privateKey string = ""
 	port int = 22
+	srcFile = "testdata/test_sftp.txt"
+	dstFile = "/tmp/test_dst_sftp.txt"
+	srcDir = "/tmp/testdata/testDirs"
+	dstDir = "/tmp/testDirs"
 )
 
 func TestConnectWithPasswd(t *testing.T){
@@ -79,3 +83,46 @@ func TestConnectWithPasswd(t *testing.T){
 
 	return
 }
+
+func TestPut(t *testing.T){
+	client,err := ConnectSFTP(host,user,password,"",port,false,true)
+    if err != nil {
+        t.Errorf("connect to sftp server error: %s", err)
+        return
+    }
+    defer client.Close()
+
+    t.Log("connect to sftp server successful")
+
+    e := Put(client,srcFile,dstFile)
+    if e != nil {
+		t.Errorf("coping %s to %s on remote server error %s",srcFile,dstFile,e)
+	} else {
+		t.Logf("coping %s to %s on remote server successful",srcFile,dstFile)	
+	}
+
+	return
+
+}
+
+func TestMput(t *testing.T){
+    client,err := ConnectSFTP(host,user,password,"",port,false,true)
+    if err != nil {
+        t.Errorf("connect to sftp server error: %s", err)
+        return
+    }
+    defer client.Close()
+
+    t.Log("connect to sftp server successful")
+
+    e := Mput(client,srcDir,dstDir,true)
+    if e != nil {
+        t.Errorf("coping %s to %s on remote server error %s",srcDir,dstDir,e)
+    } else {
+        t.Logf("coping %s to %s on remote server successful",srcDir,dstDir)   
+    }
+
+    return
+
+}
+

@@ -1,0 +1,417 @@
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 202001 Msg: try to start registyctl server
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201036 Msg: got configuration file path is: /data/code/golang/src/bzhyProjects/sysadm/_output/conf/registryctl.yaml
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201038 Msg: got the address of server: 0.0.0.0
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201039 Msg: got the port of server: 5001
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201040 Msg: socket file's path is : /var/run/registryctl.sock
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201041 Msg: access log file's path is : /data/code/golang/src/bzhyProjects/sysadm/_output/logs/registryctl-access.log
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201042 Msg: error log file's path is : /data/code/golang/src/bzhyProjects/sysadm/_output/logs/registryctl-error.log
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201043 Msg: the kind of log is  : text
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201044 Msg: log level has be set to: debug
+time=2022-04-20T11:18:45+08:00 level=warning msg=erroCode: 201026 Msg: We have found log timestampformat from configuration file,but the value of log timestampformat is not a valid(format is empty,default format will be set).default value of log timestampformat: 2006-01-02 15:04:05 will be used.
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201045 Msg: timeformat has be set to: 2006-01-02 15:04:05
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201046 Msg: is split error and access log to difference log file: true
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201047 Msg: registryctl user is : registryctl_user
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201048 Msg: registryctl password is : registryctl_password
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201069 Msg: db type is: mysql
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201049 Msg: db host : 172.28.1.10
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201050 Msg: db port : 30306
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201051 Msg: db user: sysadm
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201052 Msg: db password: Sysadm12345
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201053 Msg: db name: sysadm
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201054 Msg: ssl mode for db: disable
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201058 Msg: maxconnection to db is: 100
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201059 Msg: idle connection to db is: 20
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201060 Msg: registry host is: 172.17.0.4
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201061 Msg: registry server port is: 5000
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201066 Msg: registry server user sysadm_registry_user
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201066 Msg: registry server password sysadm_registry_password
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201070 Msg: now handling configurations for sysadm section
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 201067 Msg: sysadm host is: 172.17.0.4
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 202004 Msg: configurations have been handled and it is ok
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 202005 Msg: try to setting logger...
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 202006 Msg: loggers have been set
+time=2022-04-20T11:18:45+08:00 level=debug msg=Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export SYSADMSERVER_MODE=release
+ - using code:	sysadmServer.SetMode(sysadmServer.ReleaseMode)
+
+
+time=2022-04-20T11:18:45+08:00 level=debug msg=POST   /api/v1.0/registryctl/:action --> github.com/wangyysde/sysadm/registryctl/server.apiV1PostHandlers (3 handlers)
+
+time=2022-04-20T11:18:45+08:00 level=debug msg=DELETE /api/v1.0/registryctl/:action --> github.com/wangyysde/sysadm/registryctl/server.apiV1DeleteHandlers (3 handlers)
+
+time=2022-04-20T11:18:45+08:00 level=debug msg=GET    /v2/*path                 --> github.com/wangyysde/sysadm/registryctl/server.getHandlers (3 handlers)
+
+time=2022-04-20T11:18:45+08:00 level=debug msg=POST   /v2/*path                 --> github.com/wangyysde/sysadm/registryctl/server.postHandlers (3 handlers)
+
+time=2022-04-20T11:18:45+08:00 level=debug msg=HEAD   /v2/*path                 --> github.com/wangyysde/sysadm/registryctl/server.headHandlers (3 handlers)
+
+time=2022-04-20T11:18:45+08:00 level=debug msg=PUT    /v2/*path                 --> github.com/wangyysde/sysadm/registryctl/server.putHandlers (3 handlers)
+
+time=2022-04-20T11:18:45+08:00 level=debug msg=PATCH  /v2/*path                 --> github.com/wangyysde/sysadm/registryctl/server.patchHandlers (3 handlers)
+
+time=2022-04-20T11:18:45+08:00 level=debug msg=DELETE /v2/*path                 --> github.com/wangyysde/sysadm/registryctl/server.deleteHandlers (3 handlers)
+
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 202008 Msg: try to initating DB entity...
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 100001 Msg: Now checking database configurations.
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 100003 Msg: Database type mysql is right.
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 100006 Msg: Database server host 172.28.1.10 is right.
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 100008 Msg: Database server port 30306 is right.
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 100016 Msg: all database configuration parametes have be checked.
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 107001 Msg: Try to open a connection to mysql server
+time=2022-04-20T11:18:45+08:00 level=debug msg=erroCode: 107003 Msg: Connect to postgre server with host: 172.28.1.10 and Port: 30306. successful
+time=2022-04-20T11:18:45+08:00 level=debug msg=GET    /ping                     --> github.com/wangyysde/sysadm/registryctl/server.DaemonStart.func1 (3 handlers)
+
+time=2022-04-20T11:18:45+08:00 level=info msg=We are listen to 0.0.0.0:5001,port:5001
+time=2022-04-20T11:18:45+08:00 level=debug msg=Listening and serving HTTP on 0.0.0.0:5001
+
+time=2022-04-20T11:18:45+08:00 level=debug msg=Listening and serving HTTP on unix://var/run/registryctl.sock
+
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 20304001 Msg: handling GET handlers for PATH /
+time=2022-04-20T11:18:51+08:00 level=error msg=erroCode: 2030004 Msg: username or password are empty.
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 2030011 Msg: responsing to client with user has not login
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 2030012 Msg: the content responsed to the client is: {"errors":[{"code":"UNAUTHORIZED","message":"unauthorized:unauthorized","detail":""}]}
+time=2022-04-20T11:18:51+08:00 level=info Keys=map[] ClientIP=172.17.0.4 Method=GET StatusCode=401 ErrorMessage="" BodySize=86 Path=/v2/ Request=&{GET /v2/ HTTP/1.1 1 1 map[Accept-Encoding:[gzip] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41692 /v2/ <nil> <nil> <nil> 0xc0003c2700}
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 20304002 Msg: handling HEAD handlers for PATH /test/tomcat/blobs/sha256:8db51a0119f4602976d9695ebcb1ceefc2d452f4a8ddfaf009cb499e7ba61ad4
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 20304003 Msg: gets path is /test/tomcat/blobs/sha256:8db51a0119f4602976d9695ebcb1ceefc2d452f4a8ddfaf009cb499e7ba61ad4 imagename is test/tomcat
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/sha256:8db51a0119f4602976d9695ebcb1ceefc2d452f4a8ddfaf009cb499e7ba61ad4
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/sha256:8db51a0119f4602976d9695ebcb1ceefc2d452f4a8ddfaf009cb499e7ba61ad4) for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/sha256:8db51a0119f4602976d9695ebcb1ceefc2d452f4a8ddfaf009cb499e7ba61ad4", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:51+08:00 level=error msg=erroCode: 202041 Msg: Content-Length .
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:51+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 20306001 Msg: checking blob exist
+time=2022-04-20T11:18:51+08:00 level=info Path=/v2/test/tomcat/blobs/sha256:8db51a0119f4602976d9695ebcb1ceefc2d452f4a8ddfaf009cb499e7ba61ad4 Request=&{HEAD /v2/test/tomcat/blobs/sha256:8db51a0119f4602976d9695ebcb1ceefc2d452f4a8ddfaf009cb499e7ba61ad4 HTTP/1.1 1 1 map[Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41694 /v2/test/tomcat/blobs/sha256:8db51a0119f4602976d9695ebcb1ceefc2d452f4a8ddfaf009cb499e7ba61ad4 <nil> <nil> <nil> 0xc0006180c0} Keys=map[] ClientIP=172.17.0.4 Method=HEAD StatusCode=404 ErrorMessage="" BodySize=-1
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 20304004 Msg: handling POST handlers for PATH /test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/uploads/) for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/uploads/", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:51+08:00 level=error msg=erroCode: 202041 Msg: Content-Length 0.
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:51+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:51+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:52+08:00 level=info StatusCode=202 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/uploads/ Request=&{POST /v2/test/tomcat/blobs/uploads/ HTTP/1.1 1 1 map[Accept-Encoding:[gzip] Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] Content-Length:[0] Content-Type:[] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41698 /v2/test/tomcat/blobs/uploads/ <nil> <nil> <nil> 0xc00040c180} Keys=map[] ClientIP=172.17.0.4 Method=POST
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 20304002 Msg: handling HEAD handlers for PATH /test/tomcat/blobs/sha256:efe57b7441f629df34eefb7aa380144f4d6827847e22e33c3b2a40fefcfd7081
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 20304003 Msg: gets path is /test/tomcat/blobs/sha256:efe57b7441f629df34eefb7aa380144f4d6827847e22e33c3b2a40fefcfd7081 imagename is test/tomcat
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/sha256:efe57b7441f629df34eefb7aa380144f4d6827847e22e33c3b2a40fefcfd7081
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/sha256:efe57b7441f629df34eefb7aa380144f4d6827847e22e33c3b2a40fefcfd7081) for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/sha256:efe57b7441f629df34eefb7aa380144f4d6827847e22e33c3b2a40fefcfd7081", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:52+08:00 level=error msg=erroCode: 202041 Msg: Content-Length .
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:52+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 20306001 Msg: checking blob exist
+time=2022-04-20T11:18:52+08:00 level=info ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/sha256:efe57b7441f629df34eefb7aa380144f4d6827847e22e33c3b2a40fefcfd7081 Request=&{HEAD /v2/test/tomcat/blobs/sha256:efe57b7441f629df34eefb7aa380144f4d6827847e22e33c3b2a40fefcfd7081 HTTP/1.1 1 1 map[Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41702 /v2/test/tomcat/blobs/sha256:efe57b7441f629df34eefb7aa380144f4d6827847e22e33c3b2a40fefcfd7081 <nil> <nil> <nil> 0xc000590140} Keys=map[] ClientIP=172.17.0.4 Method=HEAD StatusCode=404
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 20304004 Msg: handling POST handlers for PATH /test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/uploads/) for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/uploads/", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:52+08:00 level=error msg=erroCode: 202041 Msg: Content-Length 0.
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:52+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:52+08:00 level=info StatusCode=202 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/uploads/ Request=&{POST /v2/test/tomcat/blobs/uploads/ HTTP/1.1 1 1 map[Accept-Encoding:[gzip] Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] Content-Length:[0] Content-Type:[] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41704 /v2/test/tomcat/blobs/uploads/ <nil> <nil> <nil> 0xc000590c00} Keys=map[] ClientIP=172.17.0.4 Method=POST
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 20304002 Msg: handling HEAD handlers for PATH /test/tomcat/blobs/sha256:dc655e69dd903f41365e3ebbecbca7fb1fdc1d14cfd16836da83908407345928
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 20304003 Msg: gets path is /test/tomcat/blobs/sha256:dc655e69dd903f41365e3ebbecbca7fb1fdc1d14cfd16836da83908407345928 imagename is test/tomcat
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/sha256:dc655e69dd903f41365e3ebbecbca7fb1fdc1d14cfd16836da83908407345928
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/sha256:dc655e69dd903f41365e3ebbecbca7fb1fdc1d14cfd16836da83908407345928) for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/sha256:dc655e69dd903f41365e3ebbecbca7fb1fdc1d14cfd16836da83908407345928", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:52+08:00 level=error msg=erroCode: 202041 Msg: Content-Length .
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:52+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:53+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 20306001 Msg: checking blob exist
+time=2022-04-20T11:18:53+08:00 level=info Method=HEAD StatusCode=404 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/sha256:dc655e69dd903f41365e3ebbecbca7fb1fdc1d14cfd16836da83908407345928 Request=&{HEAD /v2/test/tomcat/blobs/sha256:dc655e69dd903f41365e3ebbecbca7fb1fdc1d14cfd16836da83908407345928 HTTP/1.1 1 1 map[Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41708 /v2/test/tomcat/blobs/sha256:dc655e69dd903f41365e3ebbecbca7fb1fdc1d14cfd16836da83908407345928 <nil> <nil> <nil> 0xc0003c2cc0} Keys=map[] ClientIP=172.17.0.4
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 20304004 Msg: handling POST handlers for PATH /test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/uploads/) for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/uploads/", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:53+08:00 level=error msg=erroCode: 202041 Msg: Content-Length 0.
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:53+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:53+08:00 level=info ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/uploads/ Request=&{POST /v2/test/tomcat/blobs/uploads/ HTTP/1.1 1 1 map[Accept-Encoding:[gzip] Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] Content-Length:[0] Content-Type:[] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41710 /v2/test/tomcat/blobs/uploads/ <nil> <nil> <nil> 0xc00040cd00} Keys=map[] ClientIP=172.17.0.4 Method=POST StatusCode=202
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 20304002 Msg: handling HEAD handlers for PATH /test/tomcat/blobs/sha256:612cf131e4880254616bc7da37ab4270993efc252ffbe022f98c49b6b64841b4
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 20304003 Msg: gets path is /test/tomcat/blobs/sha256:612cf131e4880254616bc7da37ab4270993efc252ffbe022f98c49b6b64841b4 imagename is test/tomcat
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/sha256:612cf131e4880254616bc7da37ab4270993efc252ffbe022f98c49b6b64841b4
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/sha256:612cf131e4880254616bc7da37ab4270993efc252ffbe022f98c49b6b64841b4) for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/sha256:612cf131e4880254616bc7da37ab4270993efc252ffbe022f98c49b6b64841b4", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:53+08:00 level=error msg=erroCode: 202041 Msg: Content-Length .
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:53+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 20306001 Msg: checking blob exist
+time=2022-04-20T11:18:53+08:00 level=info Keys=map[] ClientIP=172.17.0.4 Method=HEAD StatusCode=404 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/sha256:612cf131e4880254616bc7da37ab4270993efc252ffbe022f98c49b6b64841b4 Request=&{HEAD /v2/test/tomcat/blobs/sha256:612cf131e4880254616bc7da37ab4270993efc252ffbe022f98c49b6b64841b4 HTTP/1.1 1 1 map[Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41714 /v2/test/tomcat/blobs/sha256:612cf131e4880254616bc7da37ab4270993efc252ffbe022f98c49b6b64841b4 <nil> <nil> <nil> 0xc0003c3800}
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 20304004 Msg: handling POST handlers for PATH /test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/uploads/) for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/uploads/", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:53+08:00 level=error msg=erroCode: 202041 Msg: Content-Length 0.
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:53+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:53+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:54+08:00 level=info Request=&{POST /v2/test/tomcat/blobs/uploads/ HTTP/1.1 1 1 map[Accept-Encoding:[gzip] Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] Content-Length:[0] Content-Type:[] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41716 /v2/test/tomcat/blobs/uploads/ <nil> <nil> <nil> 0xc000591740} Keys=map[] ClientIP=172.17.0.4 Method=POST StatusCode=202 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 20304002 Msg: handling HEAD handlers for PATH /test/tomcat/blobs/sha256:24e7c71ec633cf1303e720faf8462da622fe499c4f5a44c0a01cc01a3aeaacc1
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 20304003 Msg: gets path is /test/tomcat/blobs/sha256:24e7c71ec633cf1303e720faf8462da622fe499c4f5a44c0a01cc01a3aeaacc1 imagename is test/tomcat
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/sha256:24e7c71ec633cf1303e720faf8462da622fe499c4f5a44c0a01cc01a3aeaacc1
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/sha256:24e7c71ec633cf1303e720faf8462da622fe499c4f5a44c0a01cc01a3aeaacc1) for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/sha256:24e7c71ec633cf1303e720faf8462da622fe499c4f5a44c0a01cc01a3aeaacc1", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:54+08:00 level=error msg=erroCode: 202041 Msg: Content-Length .
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:54+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 20306001 Msg: checking blob exist
+time=2022-04-20T11:18:54+08:00 level=info Path=/v2/test/tomcat/blobs/sha256:24e7c71ec633cf1303e720faf8462da622fe499c4f5a44c0a01cc01a3aeaacc1 Request=&{HEAD /v2/test/tomcat/blobs/sha256:24e7c71ec633cf1303e720faf8462da622fe499c4f5a44c0a01cc01a3aeaacc1 HTTP/1.1 1 1 map[Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41720 /v2/test/tomcat/blobs/sha256:24e7c71ec633cf1303e720faf8462da622fe499c4f5a44c0a01cc01a3aeaacc1 <nil> <nil> <nil> 0xc00040d780} Keys=map[] ClientIP=172.17.0.4 Method=HEAD StatusCode=404 ErrorMessage="" BodySize=-1
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 20304004 Msg: handling POST handlers for PATH /test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/uploads/) for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/uploads/", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:54+08:00 level=error msg=erroCode: 202041 Msg: Content-Length 0.
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:54+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:54+08:00 level=info Request=&{POST /v2/test/tomcat/blobs/uploads/ HTTP/1.1 1 1 map[Accept-Encoding:[gzip] Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] Content-Length:[0] Content-Type:[] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41722 /v2/test/tomcat/blobs/uploads/ <nil> <nil> <nil> 0xc0000ec4c0} Keys=map[] ClientIP=172.17.0.4 Method=POST StatusCode=202 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 20304002 Msg: handling HEAD handlers for PATH /test/tomcat/blobs/sha256:43c0aceedb57f6288702dbed4b3a98c5274bc4c3fd4ed116f2d2489e3164012f
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 20304003 Msg: gets path is /test/tomcat/blobs/sha256:43c0aceedb57f6288702dbed4b3a98c5274bc4c3fd4ed116f2d2489e3164012f imagename is test/tomcat
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/sha256:43c0aceedb57f6288702dbed4b3a98c5274bc4c3fd4ed116f2d2489e3164012f
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/sha256:43c0aceedb57f6288702dbed4b3a98c5274bc4c3fd4ed116f2d2489e3164012f) for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/sha256:43c0aceedb57f6288702dbed4b3a98c5274bc4c3fd4ed116f2d2489e3164012f", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:54+08:00 level=error msg=erroCode: 202041 Msg: Content-Length .
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:54+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:54+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 20306001 Msg: checking blob exist
+time=2022-04-20T11:18:55+08:00 level=info Request=&{HEAD /v2/test/tomcat/blobs/sha256:43c0aceedb57f6288702dbed4b3a98c5274bc4c3fd4ed116f2d2489e3164012f HTTP/1.1 1 1 map[Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41726 /v2/test/tomcat/blobs/sha256:43c0aceedb57f6288702dbed4b3a98c5274bc4c3fd4ed116f2d2489e3164012f <nil> <nil> <nil> 0xc0002e0040} Keys=map[] ClientIP=172.17.0.4 Method=HEAD StatusCode=404 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/sha256:43c0aceedb57f6288702dbed4b3a98c5274bc4c3fd4ed116f2d2489e3164012f
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 20304004 Msg: handling POST handlers for PATH /test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/uploads/) for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/uploads/", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:55+08:00 level=error msg=erroCode: 202041 Msg: Content-Length 0.
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:55+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:55+08:00 level=info Keys=map[] ClientIP=172.17.0.4 Method=POST StatusCode=202 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/uploads/ Request=&{POST /v2/test/tomcat/blobs/uploads/ HTTP/1.1 1 1 map[Accept-Encoding:[gzip] Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] Content-Length:[0] Content-Type:[] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41728 /v2/test/tomcat/blobs/uploads/ <nil> <nil> <nil> 0xc000032280}
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 20304002 Msg: handling HEAD handlers for PATH /test/tomcat/blobs/sha256:b19a994f6d4cdbb620339bd2e4ad47b229f14276b542060622ae447649294e5d
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 20304003 Msg: gets path is /test/tomcat/blobs/sha256:b19a994f6d4cdbb620339bd2e4ad47b229f14276b542060622ae447649294e5d imagename is test/tomcat
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/sha256:b19a994f6d4cdbb620339bd2e4ad47b229f14276b542060622ae447649294e5d
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/sha256:b19a994f6d4cdbb620339bd2e4ad47b229f14276b542060622ae447649294e5d) for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/sha256:b19a994f6d4cdbb620339bd2e4ad47b229f14276b542060622ae447649294e5d", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:55+08:00 level=error msg=erroCode: 202041 Msg: Content-Length .
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:55+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 20306001 Msg: checking blob exist
+time=2022-04-20T11:18:55+08:00 level=info ClientIP=172.17.0.4 Method=HEAD StatusCode=404 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/sha256:b19a994f6d4cdbb620339bd2e4ad47b229f14276b542060622ae447649294e5d Request=&{HEAD /v2/test/tomcat/blobs/sha256:b19a994f6d4cdbb620339bd2e4ad47b229f14276b542060622ae447649294e5d HTTP/1.1 1 1 map[Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41732 /v2/test/tomcat/blobs/sha256:b19a994f6d4cdbb620339bd2e4ad47b229f14276b542060622ae447649294e5d <nil> <nil> <nil> 0xc0000ecec0} Keys=map[]
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 20304004 Msg: handling POST handlers for PATH /test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/uploads/) for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/uploads/", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:55+08:00 level=error msg=erroCode: 202041 Msg: Content-Length 0.
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:55+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:55+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:56+08:00 level=info Request=&{POST /v2/test/tomcat/blobs/uploads/ HTTP/1.1 1 1 map[Accept-Encoding:[gzip] Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] Content-Length:[0] Content-Type:[] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41734 /v2/test/tomcat/blobs/uploads/ <nil> <nil> <nil> 0xc0000ed940} Keys=map[] ClientIP=172.17.0.4 Method=POST StatusCode=202 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 20304002 Msg: handling HEAD handlers for PATH /test/tomcat/blobs/sha256:6ade5c59e324bd7cf369c72ad781c23d37e8fb48c9bbb4abbecafafd9be4cc35
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 20304003 Msg: gets path is /test/tomcat/blobs/sha256:6ade5c59e324bd7cf369c72ad781c23d37e8fb48c9bbb4abbecafafd9be4cc35 imagename is test/tomcat
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/sha256:6ade5c59e324bd7cf369c72ad781c23d37e8fb48c9bbb4abbecafafd9be4cc35
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/sha256:6ade5c59e324bd7cf369c72ad781c23d37e8fb48c9bbb4abbecafafd9be4cc35) for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/sha256:6ade5c59e324bd7cf369c72ad781c23d37e8fb48c9bbb4abbecafafd9be4cc35", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:56+08:00 level=error msg=erroCode: 202041 Msg: Content-Length .
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:56+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 20306001 Msg: checking blob exist
+time=2022-04-20T11:18:56+08:00 level=info ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/sha256:6ade5c59e324bd7cf369c72ad781c23d37e8fb48c9bbb4abbecafafd9be4cc35 Request=&{HEAD /v2/test/tomcat/blobs/sha256:6ade5c59e324bd7cf369c72ad781c23d37e8fb48c9bbb4abbecafafd9be4cc35 HTTP/1.1 1 1 map[Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41738 /v2/test/tomcat/blobs/sha256:6ade5c59e324bd7cf369c72ad781c23d37e8fb48c9bbb4abbecafafd9be4cc35 <nil> <nil> <nil> 0xc000618700} Keys=map[] ClientIP=172.17.0.4 Method=HEAD StatusCode=404
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 20304004 Msg: handling POST handlers for PATH /test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/uploads/) for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/uploads/", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:56+08:00 level=error msg=erroCode: 202041 Msg: Content-Length 0.
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:56+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:56+08:00 level=info StatusCode=202 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/uploads/ Request=&{POST /v2/test/tomcat/blobs/uploads/ HTTP/1.1 1 1 map[Accept-Encoding:[gzip] Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] Content-Length:[0] Content-Type:[] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41740 /v2/test/tomcat/blobs/uploads/ <nil> <nil> <nil> 0xc00036c3c0} Keys=map[] ClientIP=172.17.0.4 Method=POST
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 20304002 Msg: handling HEAD handlers for PATH /test/tomcat/blobs/sha256:9baf437a1badb6aad2dae5f2cd4a7b53a6c7ab6c14cba1ed1ecb42b4822b0e87
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 20304003 Msg: gets path is /test/tomcat/blobs/sha256:9baf437a1badb6aad2dae5f2cd4a7b53a6c7ab6c14cba1ed1ecb42b4822b0e87 imagename is test/tomcat
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/sha256:9baf437a1badb6aad2dae5f2cd4a7b53a6c7ab6c14cba1ed1ecb42b4822b0e87
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/sha256:9baf437a1badb6aad2dae5f2cd4a7b53a6c7ab6c14cba1ed1ecb42b4822b0e87) for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/sha256:9baf437a1badb6aad2dae5f2cd4a7b53a6c7ab6c14cba1ed1ecb42b4822b0e87", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:56+08:00 level=error msg=erroCode: 202041 Msg: Content-Length .
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:56+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:56+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 20306001 Msg: checking blob exist
+time=2022-04-20T11:18:57+08:00 level=info Keys=map[] ClientIP=172.17.0.4 Method=HEAD StatusCode=404 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/sha256:9baf437a1badb6aad2dae5f2cd4a7b53a6c7ab6c14cba1ed1ecb42b4822b0e87 Request=&{HEAD /v2/test/tomcat/blobs/sha256:9baf437a1badb6aad2dae5f2cd4a7b53a6c7ab6c14cba1ed1ecb42b4822b0e87 HTTP/1.1 1 1 map[Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41744 /v2/test/tomcat/blobs/sha256:9baf437a1badb6aad2dae5f2cd4a7b53a6c7ab6c14cba1ed1ecb42b4822b0e87 <nil> <nil> <nil> 0xc000619240}
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 20304004 Msg: handling POST handlers for PATH /test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/uploads/
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/uploads/) for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/uploads/", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:57+08:00 level=error msg=erroCode: 202041 Msg: Content-Length 0.
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:57+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:57+08:00 level=info StatusCode=202 ErrorMessage="" BodySize=-1 Path=/v2/test/tomcat/blobs/uploads/ Request=&{POST /v2/test/tomcat/blobs/uploads/ HTTP/1.1 1 1 map[Accept-Encoding:[gzip] Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] Content-Length:[0] Content-Type:[] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41746 /v2/test/tomcat/blobs/uploads/ <nil> <nil> <nil> 0xc000032f00} Keys=map[] ClientIP=172.17.0.4 Method=POST
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 20304002 Msg: handling HEAD handlers for PATH /test/tomcat/blobs/sha256:dbba69284b2786013fe94fefe0c2e66a7d3cecbb20f6d691d71dac891ee37be5
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 20304003 Msg: gets path is /test/tomcat/blobs/sha256:dbba69284b2786013fe94fefe0c2e66a7d3cecbb20f6d691d71dac891ee37be5 imagename is test/tomcat
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202032 Msg: setting headers for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202033 Msg: setting method for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202029 Msg: preparing registry root url
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202030 Msg: got registry root url is :http://172.17.0.4:5000
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202031 Msg: got request uri is :/v2/test/tomcat/blobs/sha256:dbba69284b2786013fe94fefe0c2e66a7d3cecbb20f6d691d71dac891ee37be5
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202034 Msg: setting URL(http://172.17.0.4:5000/v2/test/tomcat/blobs/sha256:dbba69284b2786013fe94fefe0c2e66a7d3cecbb20f6d691d71dac891ee37be5) for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202036 Msg: URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"172.17.0.4:5000", Path:"/v2/test/tomcat/blobs/sha256:dbba69284b2786013fe94fefe0c2e66a7d3cecbb20f6d691d71dac891ee37be5", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:"", RawFragment:""}
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202036 Msg: setting ContentLength for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202036 Msg: setting TransferEncoding for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202039 Msg: building proxy request parameters.
+time=2022-04-20T11:18:57+08:00 level=error msg=erroCode: 202041 Msg: Content-Length .
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202037 Msg: setting host for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202038 Msg: setting trailer for requesting registry server
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202018 Msg:  the request
+time=2022-04-20T11:18:57+08:00 level=error msg=erroCode: 202042 Msg: auth info: Basic c3lzYWRtX3JlZ2lzdHJ5X3VzZXI6c3lzYWRtX3JlZ2lzdHJ5X3Bhc3N3b3Jk.
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 202039 Msg: record the information of  blob sha256:dbba69284b2786013fe94fefe0c2e66a7d3cecbb20f6d691d71dac891ee37be5 size exceeded54937710 
+time=2022-04-20T11:18:57+08:00 level=debug msg=erroCode: 20306001 Msg: checking blob exist
+time=2022-04-20T11:18:57+08:00 level=info Path=/v2/test/tomcat/blobs/sha256:dbba69284b2786013fe94fefe0c2e66a7d3cecbb20f6d691d71dac891ee37be5 Request=&{HEAD /v2/test/tomcat/blobs/sha256:dbba69284b2786013fe94fefe0c2e66a7d3cecbb20f6d691d71dac891ee37be5 HTTP/1.1 1 1 map[Authorization:[Basic YWRtaW46U3lzYWRtMTIzNDU=] Connection:[close] User-Agent:[docker/19.03.6 go/go1.12.16 git-commit/369ce74a3c kernel/3.10.0-1062.12.1.el7.x86_64 os/linux arch/amd64 UpstreamClient(Docker-Client/19.03.6 \(linux\))]] {} <nil> 0 [] true 172.17.0.4:5001 map[] map[] <nil> map[] 172.17.0.4:41750 /v2/test/tomcat/blobs/sha256:dbba69284b2786013fe94fefe0c2e66a7d3cecbb20f6d691d71dac891ee37be5 <nil> <nil> <nil> 0xc000619d00} Keys=map[] ClientIP=172.17.0.4 Method=HEAD StatusCode=200 ErrorMessage="" BodySize=-1
